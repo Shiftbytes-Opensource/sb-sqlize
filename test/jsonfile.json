@@ -1,0 +1,29 @@
+{
+    "tablename" : "students",
+    "unique_fields" : ["name"],
+    "not_nullable_fields" : ["name", "homeworld", "gender", "jedi"],
+    "charlen" : {"name" : 50, "gender" : 8},
+    "data" :     [
+        {
+         "name": "anakin",
+         "gender": "male", 
+         "homeworld": "tatooine",
+         "born": "41.9bby",
+         "jedi": "yes"
+        },
+        {
+         "name": "amidala",
+         "gender": "female", 
+         "homeworld": "naboo",
+         "born": "46.bby",
+         "jedi": "no"
+        },
+        {
+         "name": "r2-d2",
+         "gender": "unknown",
+         "homeworld": "naboo",
+         "born": "33bby",
+         "jedi": "no"
+        }
+    ]
+}
