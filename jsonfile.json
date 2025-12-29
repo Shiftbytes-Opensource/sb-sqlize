@@ -2,14 +2,23 @@
     "tablename" : "students",
     "unique_fields" : ["name"],
     "not_nullable_fields" : ["name", "homeworld", "gender", "jedi"],
-    "charlen" : {"name" : 50, "gender" : 8},
+    "data_type_map" : {
+        "name": "string(50)",
+        "gender" : "varchar(2)",
+        "homeworld" : "string(100)",
+        "born" : "string(50)",
+        "jedi" : "boolean",
+        "motto" : "text"
+    },
+
     "data" :     [
         {
          "name": "anakin",
          "gender": "male", 
          "homeworld": "tatooine",
          "born": "41.9bby",
-         "jedi": "yes"
+         "jedi": "yes",
+         "motto" : "llllllllllllllllllllllllllllllllllllonnnnnnnnnnnnnnnnnnnnnnnnnnsddddddddsssssssssssssssscaaaaaaaaaaaaaaaaaaaa"
         },
         {
          "name": "amidala",
